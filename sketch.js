@@ -27,14 +27,14 @@ function setup() {
     isStatic: true
   };
 
-  playerBase = Bodies.rectangle(200, 350, 180, 150, options);
+  playerBase = Bodies.rectangle(1200, 350, 180, 150, options);
   World.add(world, playerBase);
 
-  player = Bodies.rectangle(250, playerBase.position.y - 160, 50, 180, options);
+  player = Bodies.rectangle(1250, playerBase.position.y - 160, 50, 180, options);
   World.add(world,player)
 
   playerArcher = new PlayerArcher(
-    340,
+    1340,
     playerBase.position.y - 112,
     120,
     120
